@@ -75,15 +75,15 @@ Mục tiêu: **22 commit nội dung**. Phần của Danh nặng nhất nên nh�
 | 20/08 | Hoàn thiện hồ sơ C3 bán trả góp | `docs: hoan thien ho so C3` | `f8b938e` | `docs/quy-trinh-cot-loi` |
 | 21/08 | Hoàn thiện hồ sơ C4 bảo hành đổi trả | `docs: hoan thien ho so C4` | `f9c0807` | `docs/quy-trinh-cot-loi` |
 | 22/08 | Sơ đồ kiến trúc Hình 1.1, đủ 12 quy trình | `docs: so do kien truc 12 quy trinh` | `b022761` | `docs/quy-trinh-cot-loi` |
-| 25/08 | BPMN M2 quản lý nhà cung cấp | `model: BPMN M2 quan ly nha cung cap` | (chưa làm) | — |
-| 27/08 | BPMN C3 bán trả góp | `model: BPMN C3 ban tra gop` | (chưa làm) | — |
-| 29/08 | BPMN C4 bảo hành đổi trả | `model: BPMN C4 bao hanh doi tra` | (chưa làm) | — |
-| 30/08 | Biên bản review chéo và khóa mô hình | `evidence: bien ban review BPMN` | (chưa làm) | — |
-| 01/09 | Rà soát và ghép Chương 1–2 | `docs: ra soat chuong 1-2` | (chưa làm) | — |
-| 02/09 | Hoàn thiện Issue Register | `analysis: hoan thien issue register` | (chưa làm) | — |
-| 03/09 | Dựng báo cáo Word bản đầy đủ | `report: bao cao word ban day du` | (chưa làm) | — |
-| 05/09 | Dựng slide và kịch bản trình bày | `slide: slide 24 trang va kich ban` | (chưa làm) | — |
-| 06/09 | Soát checklist và chốt bản nộp | `report: chot ban cuoi` | (chưa làm) | — |
+| 25/08 | BPMN M2 quản lý nhà cung cấp | `model: BPMN M2 quan ly nha cung cap` | `1f48208` | `docs/quy-trinh-cot-loi` |
+| 27/08 | BPMN C3 bán trả góp | `model: BPMN C3 ban tra gop` | `d3fe083` | `docs/quy-trinh-cot-loi` |
+| 29/08 | BPMN C4 bảo hành đổi trả | `model: BPMN C4 bao hanh doi tra` | `e82fac2` | `docs/quy-trinh-cot-loi` |
+| 30/08 | Biên bản review chéo và khóa mô hình | `evidence: bien ban review BPMN` | `1f5723c` (khung) | `docs/quy-trinh-cot-loi` |
+| 01/09 | Rà soát và ghép Chương 1–2 | `docs: ra soat chuong 1-2` | `ef9bdf7` | `docs/quy-trinh-cot-loi` |
+| 02/09 | Hoàn thiện Issue Register | `analysis: hoan thien issue register` | `c96487d` (khung) | `docs/quy-trinh-cot-loi` |
+| 03/09 | Dựng báo cáo Word bản đầy đủ | `report: bao cao word ban day du` | `a44763f` (khung) | `docs/quy-trinh-cot-loi` |
+| 05/09 | Dựng slide và kịch bản trình bày | `slide: slide 24 trang va kich ban` | `1440274` | `docs/quy-trinh-cot-loi` |
+| 06/09 | Soát checklist và chốt bản nộp | `report: chot ban cuoi` | `11915c1` (checklist) | `docs/quy-trinh-cot-loi` |
 | 07/09 | Nộp | — | — | — |
 
 > Bảng có 23 dòng công việc vì ngày 07/09 không tạo commit; tổng commit nội dung là **22**.
