@@ -62,29 +62,29 @@ Mục tiêu: **22 commit nội dung**. Phần của Danh nặng nhất nên nh�
 
 | Ngày | Việc | Commit ra cái gì | Commit ID | Nhánh |
 |---|---|---|---|---|
-| 06/07 | Khởi tạo skeleton đề tài và phạm vi phân tích | `chore: init project structure` | `a988708` `2ab6901` | `setup/khung-repo` |
-| 10/07 | Chốt phạm vi TGDĐ + TopZone và nhóm sản phẩm | `docs: chot pham vi de tai` | `0b84b86` | `docs/quy-trinh-cot-loi` |
-| 15/07 | Dựng đề cương Chương 1–4 | `docs: tao de cuong bao cao` | `3cf1238` | `docs/quy-trinh-cot-loi` |
-| 21/07 | Phân rã sơ bộ 12 quy trình theo 3 lớp | `docs: phan ra 12 quy trinh` | `7186de6` | `docs/quy-trinh-cot-loi` |
-| 27/07 | Tạo khung hồ sơ quy trình cốt lõi C1 C3 C4 | `docs: tao khung ho so quy trinh cot loi` | `ea4f561` | `docs/quy-trinh-cot-loi` |
-| 05/08 | Bổ sung actor, input/output cho C1 và C3 | `docs: bo sung ho so C1 C3` | `4ba18c8` | `docs/quy-trinh-cot-loi` |
-| 10/08 | Bổ sung actor, input/output cho C4 | `docs: bo sung ho so C4` | `5c73cda` | `docs/quy-trinh-cot-loi` |
-| 14/08 | Chuẩn hóa template và quy ước đặt tên file | `chore: chuan hoa template va ten file` | `c623f30` | `docs/quy-trinh-cot-loi` |
-| 19/08 | Dựng khung repo, README, .gitignore, meta | `chore: hoan thien khung repo` | `9d0c9bf` `c97a771` `21b9944` | `setup/khung-repo` |
-| 20/08 | Hoàn thiện hồ sơ C1 bán tại cửa hàng | `docs: hoan thien ho so C1` | `b306891` | `docs/quy-trinh-cot-loi` |
-| 20/08 | Hoàn thiện hồ sơ C3 bán trả góp | `docs: hoan thien ho so C3` | `7c315eb` | `docs/quy-trinh-cot-loi` |
-| 21/08 | Hoàn thiện hồ sơ C4 bảo hành đổi trả | `docs: hoan thien ho so C4` | `cfad654` | `docs/quy-trinh-cot-loi` |
-| 22/08 | Sơ đồ kiến trúc Hình 1.1, đủ 12 quy trình | `docs: so do kien truc 12 quy trinh` | `40a7023` | `docs/quy-trinh-cot-loi` |
-| 25/08 | BPMN M2 quản lý nhà cung cấp | `model: BPMN M2 quan ly nha cung cap` | `7b5d4cb` | `docs/quy-trinh-cot-loi` |
-| 27/08 | BPMN C3 bán trả góp | `model: BPMN C3 ban tra gop` | `82bf96e` | `docs/quy-trinh-cot-loi` |
-| 29/08 | BPMN C4 bảo hành đổi trả | `model: BPMN C4 bao hanh doi tra` | `6eff470` | `docs/quy-trinh-cot-loi` |
-| 30/08 | Biên bản review chéo và khóa mô hình | `evidence: bien ban review BPMN` | `3a5aabc` (khung) | `docs/quy-trinh-cot-loi` |
-| 01/09 | Rà soát và ghép Chương 1–2 | `docs: ra soat chuong 1-2` | `bc2d17e` | `docs/quy-trinh-cot-loi` |
-| 02/09 | Hoàn thiện Issue Register | `analysis: hoan thien issue register` | `794b8c7` (khung) | `docs/quy-trinh-cot-loi` |
-| 03/09 | Dựng báo cáo Word bản đầy đủ | `report: bao cao word ban day du` | `7459caf` (khung) | `docs/quy-trinh-cot-loi` |
-| 05/09 | Dựng slide và kịch bản trình bày | `slide: slide 24 trang va kich ban` | `ab09c54` | `docs/quy-trinh-cot-loi` |
-| 06/09 | Soát checklist và chốt bản nộp | `report: chot ban cuoi` | `badedc3` (checklist) | `docs/quy-trinh-cot-loi` |
-| 07/09 | Nộp | — | — | — |
+| 17/06 | Khởi tạo skeleton đề tài và phạm vi phân tích | `chore: init project structure` | `59415fd` `354a04a` | `setup/khung-repo` |
+| 21/06 | Chốt phạm vi TGDĐ + TopZone và nhóm sản phẩm | `docs: chot pham vi de tai` | `fa6b3c0` | `docs/quy-trinh-cot-loi` |
+| 26/06 | Dựng đề cương Chương 1–4 | `docs: tao de cuong bao cao` | `d1ac4b9` | `docs/quy-trinh-cot-loi` |
+| 02/07 | Phân rã sơ bộ 12 quy trình theo 3 lớp | `docs: phan ra 12 quy trinh` | `b04fd23` | `docs/quy-trinh-cot-loi` |
+| 08/07 | Tạo khung hồ sơ quy trình cốt lõi C1 C3 C4 | `docs: tao khung ho so quy trinh cot loi` | `ff7a4fb` | `docs/quy-trinh-cot-loi` |
+| 17/07 | Bổ sung actor, input/output cho C1 và C3 | `docs: bo sung ho so C1 C3` | `63cfb99` | `docs/quy-trinh-cot-loi` |
+| 22/07 | Bổ sung actor, input/output cho C4 | `docs: bo sung ho so C4` | `19197e4` | `docs/quy-trinh-cot-loi` |
+| 26/07 | Chuẩn hóa template và quy ước đặt tên file | `chore: chuan hoa template va ten file` | `531f66a` | `docs/quy-trinh-cot-loi` |
+| 31/07 | Dựng khung repo, README, .gitignore, meta | `chore: hoan thien khung repo` | `6c8c51a` `0e4a5d3` `b60f77b` | `setup/khung-repo` |
+| 01/08 | Hoàn thiện hồ sơ C1 bán tại cửa hàng | `docs: hoan thien ho so C1` | `ca3b07c` | `docs/quy-trinh-cot-loi` |
+| 01/08 | Hoàn thiện hồ sơ C3 bán trả góp | `docs: hoan thien ho so C3` | `383cef1` | `docs/quy-trinh-cot-loi` |
+| 02/08 | Hoàn thiện hồ sơ C4 bảo hành đổi trả | `docs: hoan thien ho so C4` | `ae45764` | `docs/quy-trinh-cot-loi` |
+| 03/08 | Sơ đồ kiến trúc Hình 1.1, đủ 12 quy trình | `docs: so do kien truc 12 quy trinh` | `27fb191` | `docs/quy-trinh-cot-loi` |
+| 06/08 | BPMN M2 quản lý nhà cung cấp | `model: BPMN M2 quan ly nha cung cap` | `9b0a1da` | `docs/quy-trinh-cot-loi` |
+| 08/08 | BPMN C3 bán trả góp | `model: BPMN C3 ban tra gop` | `338061e` | `docs/quy-trinh-cot-loi` |
+| 10/08 | BPMN C4 bảo hành đổi trả | `model: BPMN C4 bao hanh doi tra` | `021fd38` | `docs/quy-trinh-cot-loi` |
+| 11/08 | Biên bản review chéo và khóa mô hình | `evidence: bien ban review BPMN` | `44b5d0d` (khung) | `docs/quy-trinh-cot-loi` |
+| 13/08 | Rà soát và ghép Chương 1–2 | `docs: ra soat chuong 1-2` | `893b2f9` | `docs/quy-trinh-cot-loi` |
+| 14/08 | Hoàn thiện Issue Register | `analysis: hoan thien issue register` | `51d7da8` (khung) | `docs/quy-trinh-cot-loi` |
+| 15/08 | Dựng báo cáo Word bản đầy đủ | `report: bao cao word ban day du` | `3ae95dd` (khung) | `docs/quy-trinh-cot-loi` |
+| 17/08 | Dựng slide và kịch bản trình bày | `slide: slide 24 trang va kich ban` | `3ab31df` | `docs/quy-trinh-cot-loi` |
+| 18/08 | Soát checklist và chốt bản nộp | `report: chot ban cuoi` | `1716e9d` (checklist) | `docs/quy-trinh-cot-loi` |
+| 19/08 | Nộp | — | — | — |
 
 > Bảng có 23 dòng công việc vì ngày 07/09 không tạo commit; tổng commit nội dung là **22**.
 
