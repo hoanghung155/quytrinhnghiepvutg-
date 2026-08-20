@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------
+# Do an: Phan tich quy trinh nghiep vu chuoi ban le TGDD + TopZone
+# Quy uoc dat ten: xem meta/P0-chung-quy-uoc-revised.md muc 5
+# ---------------------------------------------------------------
+
+# File tam cua Microsoft Office (Word, Excel, PowerPoint)
+~$*
+*.tmp
+*.wbk
+*.asd
+*.xlk
+
+# File khoa cua LibreOffice / OpenOffice
+.~lock.*#
+
+# Slide bai giang cua giang vien - khong day len repo
+tai-lieu-giang-vien/
+chap*.pdf
+Chuong*.pdf
+Buoi*.pdf
+Buổi*.pdf
+Practice*.pdf
+
+# Thu muc build / san pham trung gian
+build/
+dist/
+.cache/
+*.egg-info/
+
+# Moi truong Python dung de sinh so do
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Node
+node_modules/
+
+# Rac he dieu hanh
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Cau hinh IDE ca nhan
+.vscode/
+.idea/
