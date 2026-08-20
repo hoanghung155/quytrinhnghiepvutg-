@@ -1,7 +1,7 @@
 # M2 — Quản lý nhà cung cấp
 
 **Lớp:** quản lý
-**Người lập:** Nguyễn Thị Hồng Phúc · **Phiên bản:** v1 (draft)
+**Người lập:** Nguyễn Thị Hồng Phúc · **Phiên bản:** v2 (hoàn thiện)
 **Có mô hình BPMN:** có — [M2-quan-ly-nha-cung-cap.bpmn](../../../../model/bpmn/M2-quan-ly-nha-cung-cap.bpmn) (Danh dựng, 9 gateway)
 
 > **Lưu ý phối hợp:** mô hình BPMN của M2 do Danh dựng **trước** khi có hồ sơ này, kèm ghi
@@ -125,7 +125,18 @@ vòng phản hồi C4 → M2 có thật — nếu khảo sát bác bỏ, phát h
 
 ## 9. Chỉ số đo lường
 
-(chưa hoàn thiện — chốt cách đo ở bản v2)
+| Chỉ số | Đơn vị | Cách đo | Giá trị ghi nhận | Nguồn |
+|---|---|---|---|---|
+| Thời gian từ phát hành PO tới khi NCC xác nhận | ngày | Đo trên dữ liệu PO | (chưa xác minh — dữ liệu nội bộ khối thu mua) | ngoài tầm khảo sát cửa hàng |
+| Tỷ lệ lô hàng không đạt nghiệm thu phải giao lại | % | Đếm số lần rẽ nhánh "không đạt" ở G7 | (chưa xác minh) | dữ liệu nội bộ |
+| Độ trễ của dữ liệu tỷ lệ lỗi từ C4 về tới bước đánh giá NCC | ngày | Khoảng cách giữa thời điểm ghi nhận lỗi ở C4 và kỳ đánh giá gần nhất | (chưa xác minh) | liên quan IR-13 |
+| Chu kỳ đánh giá nhà cung cấp | tháng | Hỏi bộ phận thu mua | (chưa xác minh) | phỏng vấn khối văn phòng — chưa có kênh tiếp cận |
+| Số điểm ra quyết định trong quy trình | điểm | Đếm từ bảng mục 6 | 9 | phân tích hồ sơ |
+
+Chỉ dòng cuối là số đo được trong phạm vi đề tài. Bốn dòng còn lại cần dữ liệu khối thu
+mua mà nhóm không tiếp cận được — giữ `(chưa xác minh)`, **không điền số ước lượng**.
+Chỉ số thứ ba là con số đáng giá nhất nếu sau này có kênh hỏi, vì nó định lượng trực tiếp
+phát hiện IR-13.
 
 ## 10. Hệ thống và biểu mẫu liên quan
 
@@ -138,7 +149,19 @@ vòng phản hồi C4 → M2 có thật — nếu khảo sát bác bỏ, phát h
 
 ## 11. Điểm nghẽn quan sát được
 
-(chưa hoàn thiện — điền ở bản v2 sau khi rà lại bảng bước)
+| # | Điểm nghẽn | Vì sao là nghẽn | Nhóm lãng phí | Bằng chứng cần có |
+|---|---|---|---|---|
+| B1 | Bước 4 — chờ NCC gửi hồ sơ năng lực và báo giá | Toàn bộ nhánh tìm NCC mới dừng chờ actor bên ngoài, cửa hàng và thu mua không tác động được | **Hold** | (chưa xác minh) |
+| B2 | G6 — PO quá hạn xác nhận, phải nhắc lại | Vừa phát sinh chờ, vừa phát sinh công việc nhắc vốn không tạo giá trị | **Hold** + **Overdo** | (chưa xác minh) |
+| B3 | Bước 15 — lô hàng không đạt phải giao lại | Lặp lại toàn bộ chu kỳ vận chuyển và kiểm tra đã làm một lần | **Move** + **Overdo** | (chưa xác minh) |
+| B4 | Bước 8 — trình phê duyệt cấp cao khi vượt hạn mức | Hồ sơ nằm chờ ở cấp duyệt, thời gian phụ thuộc lịch của ban lãnh đạo | **Hold** | (chưa xác minh) |
+| B5 | Bước 17 — dữ liệu tỷ lệ lỗi từ C4 về chậm | Đánh giá NCC dựa trên dữ liệu cũ, quyết định giữ hay loại NCC không phản ánh chất lượng thực tế | **Hold** | Đã ghi nhận là IR-13 |
+
+B5 chính là phát hiện **IR-13** đã có trong Issue Register, nhìn từ phía M2 thay vì từ
+phía C4. Khi bổ sung phát hiện M1–M4 vào Issue Register, **không tạo mã mới cho B5** —
+giữ nguyên IR-13 và thêm M2 vào cột nguồn để tránh đếm trùng một vấn đề thành hai.
+
+Bốn điểm B1–B4 là phát hiện mới, đánh số tiếp từ IR-14 ở nhánh `analysis/dinh-tinh`.
 
 ## 12. Nguồn tham chiếu
 
