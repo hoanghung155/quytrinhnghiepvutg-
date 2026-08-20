@@ -1,7 +1,7 @@
 # M1 — Hoạch định nhu cầu
 
 **Lớp:** quản lý
-**Người lập:** Nguyễn Thị Hồng Phúc · **Phiên bản:** v1 (draft)
+**Người lập:** Nguyễn Thị Hồng Phúc · **Phiên bản:** v2 (hoàn thiện)
 **Có mô hình BPMN:** không
 
 ## 1. Mục đích
@@ -107,7 +107,18 @@ lại ở buổi khảo sát 23/08 (câu Q1 trong danh sách câu hỏi mở c�
 
 ## 9. Chỉ số đo lường
 
-(chưa hoàn thiện — chốt cách đo ở bản v2)
+| Chỉ số | Đơn vị | Cách đo | Giá trị ghi nhận | Nguồn |
+|---|---|---|---|---|
+| Sai lệch giữa dự báo và bán thực tế theo nhóm hàng | % | So sánh kế hoạch kỳ với bán thực tế cùng kỳ | (chưa xác minh — không tiếp cận được dữ liệu nội bộ) | dữ liệu nội bộ, ngoài tầm khảo sát |
+| Độ dài chu kỳ lập kế hoạch, từ bước 1 tới bước 11 | ngày | Hỏi bộ phận kế hoạch | (chưa xác minh) | phỏng vấn khối văn phòng — chưa có kênh tiếp cận |
+| Số vòng lặp trình duyệt trước khi kế hoạch được duyệt | lần | Đếm số lần rẽ nhánh "trả lại" ở G6 | (chưa xác minh) | dữ liệu nội bộ |
+| Tỷ lệ đề xuất từ cửa hàng được chấp nhận | % | Câu hỏi Q1 ở buổi khảo sát | (chờ khảo sát 23/08) | phỏng vấn quản lý cửa hàng |
+| Số điểm ra quyết định trong quy trình | điểm | Đếm từ bảng mục 6 | 7 | phân tích hồ sơ |
+
+Chỉ có hai dòng cuối là khả thi trong phạm vi đề tài: chỉ số thứ tư hỏi được ở buổi khảo
+sát, chỉ số thứ năm đếm được từ chính hồ sơ. Ba chỉ số đầu cần dữ liệu nội bộ khối văn
+phòng mà nhóm không có kênh tiếp cận — ghi `(chưa xác minh)` và nêu rõ giới hạn ở Chương
+3, **không điền số ước lượng cho đủ bảng**.
 
 ## 10. Hệ thống và biểu mẫu liên quan
 
@@ -120,7 +131,19 @@ lại ở buổi khảo sát 23/08 (câu Q1 trong danh sách câu hỏi mở c�
 
 ## 11. Điểm nghẽn quan sát được
 
-(chưa hoàn thiện — điền ở bản v2 sau khi rà lại bảng bước)
+| # | Điểm nghẽn | Vì sao là nghẽn | Nhóm lãng phí | Bằng chứng cần có |
+|---|---|---|---|---|
+| B1 | Bước 7 — thu thập đề xuất điều chỉnh từ cửa hàng | Chờ phản hồi từ nhiều điểm bán, tiến độ kế hoạch phụ thuộc điểm bán chậm nhất | **Hold** | Câu hỏi Q1 |
+| B2 | G6 — kế hoạch bị trả lại phải lập lại từ bước 5 | Lặp lại toàn bộ khâu dự báo và hiệu chỉnh đã làm | **Overdo** | (chưa xác minh) |
+| B3 | Bước 5 — dự báo cho model mới ra mắt | Không có cơ sở lịch sử, sai số cao; sai số này về sau phải chữa bằng điều chuyển ở M3 | **Move** | Đối chiếu với tần suất điều chuyển ở M3 |
+| B4 | Bước 12 — vòng phản hồi sai lệch chỉ dùng được cho kỳ sau | Phát hiện sai dự báo giữa kỳ nhưng không hiệu chỉnh được trong kỳ đang chạy | **Hold** | (chưa xác minh) |
+
+B3 là điểm đáng chú ý nhất về mặt liên thông: một sai sót ở M1 không dừng lại ở M1 mà
+biến thành chi phí vận chuyển ở M3. Đây là căn cứ cho một nhánh của biểu đồ xương cá ở
+mục 4.5.
+
+Bốn điểm này bổ sung vào Issue Register, đánh số tiếp từ IR-14 — thực hiện ở nhánh
+`analysis/dinh-tinh`.
 
 ## 12. Nguồn tham chiếu
 
