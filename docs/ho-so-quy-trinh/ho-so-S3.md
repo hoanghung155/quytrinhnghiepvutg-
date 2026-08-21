@@ -101,7 +101,7 @@ Quy trình mua sắm hạ tầng công nghệ tồn tại để cung cấp, nân
 
 - **Thời gian mua sắm quá lâu:** Từ khi phát sinh nhu cầu đến khi nhận hàng thường mất 15-20 ngày (có khi lên tới 30 ngày), do phải chờ nhà cung cấp báo giá, thương thảo. Bằng chứng: quan sát dữ liệu mua hàng tháng 7-8/2026, máy POS trung bình mất 18 ngày.
 - **So sánh giá từ 1-2 nhà cung cấp thôi:** Phòng Mua hàng không luôn so sánh từ 3 nhà cung cấp như quy định, chỉ lấy 1-2 nhà quen thuộc, dẫn tới giá có thể không cạnh tranh. Bằng chứng: phỏng vấn Trưởng Phòng Mua hàng, 19/08/2026, cho biết "có lúc thiếu thời gian nên chỉ gọi nhà cung cấp quen".
-- **Kiểm tra kỹ thuật bị bỏ qua:** Có những lần nhận hàng không kiểm tra kỹ thương, chỉ kiểm tra số lượng, dẫn tới hàng lỗi phát hiện muộn. Bằng chức: quan sát tại kho hàng, máy quét mã vạch không hoạt động được phát hiện 3 ngày sau nhận hàng.
+- **Kiểm tra kỹ thuật bị bỏ qua:** Có những lần nhận hàng không kiểm tra kỹ thương, chỉ kiểm tra số lượng, dẫn tới hàng lỗi phát hiện muộn. Bằng chứng: quan sát tại kho hàng, máy quét mã vạch không hoạt động được phát hiện 3 ngày sau nhận hàng.
 
 ## 12. Nguồn tham chiếu
 

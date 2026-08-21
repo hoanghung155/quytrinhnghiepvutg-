@@ -98,7 +98,7 @@ Quy trình vận hành ERP/POS tồn tại để quản lý các hệ thống th
 
 - **Thời gian đồng bộ dữ liệu từ POS lên ERP chậm:** Dữ liệu giao dịch có khi mất 2-3 giờ mới cập nhật vào ERP, dẫn tới báo cáo ngày không chính xác. Bằng chứng: quan sát tại cửa hàng thegioididong.com Hà Nội sáng 15/08/2026, doanh số 10h sáng vẫn chưa hiển thị trên ERP lúc 13h.
 - **Lỗi quẹt mã vạch:** Có những sản phẩm mã vạch bị lỗi, nhân viên phải nhập tay, gây chậm quy trình. Bằng chứng: phỏng vấn Trưởng ca TopZone, một ca làm việc có 5-10 lần lỗi quẹt/100 giao dịch.
-- **Chênh lệch tiền mặt khó xác định nguyên nhân:** Khi ca đóng bị lệch tiền, quản lý ca mất 30-60 phút để tìm ra lý do (thường là ghi sai, đếm sai hoặc bị mất), nhưng không phải lúc nào cũng tìm được. Bằng chức: quan sát buổi đóng ca, tháng 8/2026.
+- **Chênh lệch tiền mặt khó xác định nguyên nhân:** Khi ca đóng bị lệch tiền, quản lý ca mất 30-60 phút để tìm ra lý do (thường là ghi sai, đếm sai hoặc bị mất), nhưng không phải lúc nào cũng tìm được. Bằng chứng: quan sát buổi đóng ca, tháng 8/2026.
 
 ## 12. Nguồn tham chiếu
 

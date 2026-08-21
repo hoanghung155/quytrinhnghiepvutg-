@@ -93,7 +93,7 @@ Quy trình tuyển dụng tồn tại để tìm kiếm, đánh giá và tuyển
 ## 11. Điểm nghẽn quan sát được
 
 - **Thời gian tuyển dụng quá dài:** Từ khi đăng tuyên bố đến ký hợp đồng thường mất 20-30 ngày, do sàng lọc hồ sơ chậm (hôm nay ghi 2 ngày nhưng thực tế rất lâu) hoặc ứng viên phỏng vấn chậm. Bằng chứng: quan sát tại phòng Nhân sự thegioididong.com Chi Nhánh Hà Nội, Phòng Mua hàng nhân sự mất 5-10 ngày chỉ để sàng lọc hồ sơ.
-- **Tỉ lệ sơ tuyển rất thấp:** Thường chỉ 5-10% hồ sơ được qua sơ tuyển, do tiêu chí cao (bằng cấp cao, kinh nghiệm 2+ năm) nhưng tiền lương không cạnh tranh. Bằng chứ: phỏng vấn với Trưởng Phòng Nhân sự, tháng 7/2026.
+- **Tỉ lệ sơ tuyển rất thấp:** Thường chỉ 5-10% hồ sơ được qua sơ tuyển, do tiêu chí cao (bằng cấp cao, kinh nghiệm 2+ năm) nhưng tiền lương không cạnh tranh. Bằng chứng: phỏng vấn với Trưởng Phòng Nhân sự, tháng 7/2026.
 - **Phỏng vấn chuyên môn không có chuẩn:** Mỗi quản lý có tiêu chí khác nhau, không có bảng đánh giá thống nhất, dẫn tới quyết định chủ quan. Bằng chứng: quan sát buổi phỏng vấn tại cửa hàng TopZone, tháng 8/2026.
 
 ## 12. Nguồn tham chiếu
