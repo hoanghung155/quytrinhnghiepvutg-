@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" id="Definitions_1" targetNamespace="http://example.org/bpmn">
+  <bpmn2:process id="Process_1" isExecutable="false">
+
+    <!-- Start Event -->
+    <bpmn2:startEvent id="StartEvent_1" name="Tiếp nhận hóa đơn từ NCC">
+      <bpmn2:outgoing>Flow_1</bpmn2:outgoing>
+    </bpmn2:startEvent>
+
+    <!-- Step 1: Receive Invoice -->
+    <bpmn2:task id="Task_1" name="Tiếp nhận hóa đơn">
+      <bpmn2:incoming>Flow_1</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_2</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Gateway 1: Check Invoice Validity -->
+    <bpmn2:exclusiveGateway id="Gateway_1" name="G1: Hóa đơn có hợp lệ?">
+      <bpmn2:incoming>Flow_2</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_3</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_4</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+
+    <!-- Step 2a: Valid Invoice - Lookup Document -->
+    <bpmn2:task id="Task_2" name="Tra cứu chứng từ nhập kho">
+      <bpmn2:incoming>Flow_3</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_5</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Step 2b: Invalid Invoice - Return -->
+    <bpmn2:task id="Task_2b" name="Trả lại nhà cung cấp">
+      <bpmn2:incoming>Flow_4</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_4b</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Gateway 2: Check Quantity & Price -->
+    <bpmn2:exclusiveGateway id="Gateway_2" name="G2: Số lượng &amp; giá khớp?">
+      <bpmn2:incoming>Flow_5</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_6</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_7</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+
+    <!-- Step 3a: Match - Check Sales -->
+    <bpmn2:task id="Task_3" name="Kiểm tra doanh số bán hàng">
+      <bpmn2:incoming>Flow_6</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_8</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Step 3b: Not Match - Record Discrepancy -->
+    <bpmn2:task id="Task_3b" name="Ghi nhận lệch số lượng/giá">
+      <bpmn2:incoming>Flow_7</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_8b</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Gateway 3: Check Inventory Status -->
+    <bpmn2:exclusiveGateway id="Gateway_3" name="G3: Hàng được bán hết?">
+      <bpmn2:incoming>Flow_8</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_9</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_10</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_11</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+
+    <!-- Step 4a: Sold Out -->
+    <bpmn2:task id="Task_4a" name="Tính toán công nợ (bán hết)">
+      <bpmn2:incoming>Flow_9</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_12</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Step 4b: Remaining Stock -->
+    <bpmn2:task id="Task_4b" name="Tính toán công nợ (còn tồn)">
+      <bpmn2:incoming>Flow_10</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_12</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Step 4c: Lost/Damaged -->
+    <bpmn2:task id="Task_4c" name="Tính toán công nợ (mất/hỏng)">
+      <bpmn2:incoming>Flow_11</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_12</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Step 5: Compare with System Data -->
+    <bpmn2:task id="Task_5" name="So sánh với dữ liệu ERP">
+      <bpmn2:incoming>Flow_12</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_13</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Gateway 4: System Match -->
+    <bpmn2:exclusiveGateway id="Gateway_4" name="G4: Công nợ khớp ERP?">
+      <bpmn2:incoming>Flow_13</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_14</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_15</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+
+    <!-- Step 6a: Match - Approve Payment -->
+    <bpmn2:task id="Task_6a" name="Lập phiếu thanh toán">
+      <bpmn2:incoming>Flow_14</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_16</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Step 6b: Not Match - Identify Cause -->
+    <bpmn2:task id="Task_6b" name="Xác định nguyên nhân lệch">
+      <bpmn2:incoming>Flow_15</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_17</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Gateway 5: Cause of Discrepancy -->
+    <bpmn2:exclusiveGateway id="Gateway_5" name="G5: Nguyên nhân lệch?">
+      <bpmn2:incoming>Flow_17</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_18</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_19</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_20</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_21</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+
+    <!-- Step 7a: Gift/Damage/Lost - Adjustment Voucher -->
+    <bpmn2:task id="Task_7a" name="Lập phiếu điều chỉnh">
+      <bpmn2:incoming>Flow_18</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_22</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Step 7b: Data Entry Error -->
+    <bpmn2:task id="Task_7b" name="Điều chỉnh dữ liệu ERP">
+      <bpmn2:incoming>Flow_19</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_22</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Step 7c: Price Change -->
+    <bpmn2:task id="Task_7c" name="Điều chỉnh giá nhập">
+      <bpmn2:incoming>Flow_20</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_22</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Step 7d: Other Error -->
+    <bpmn2:task id="Task_7d" name="Điều tra chi tiết">
+      <bpmn2:incoming>Flow_21</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_22</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Gateway 6: Large Discrepancy Check -->
+    <bpmn2:exclusiveGateway id="Gateway_6" name="G6: Lệch lớn &gt;5%?">
+      <bpmn2:incoming>Flow_22</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_23</bpmn2:outgoing>
+      <bpmn2:outgoing>Flow_24</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+
+    <!-- Step 8a: Large Discrepancy - Approval Required -->
+    <bpmn2:task id="Task_8a" name="Phê duyệt giám đốc">
+      <bpmn2:incoming>Flow_23</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_25</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Step 8b: Small Discrepancy - Auto Approve -->
+    <bpmn2:task id="Task_8b" name="Tự động phê duyệt">
+      <bpmn2:incoming>Flow_24</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_25</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Join paths -->
+    <bpmn2:exclusiveGateway id="Gateway_7" name="">
+      <bpmn2:incoming>Flow_16</bpmn2:incoming>
+      <bpmn2:incoming>Flow_25</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_26</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+
+    <!-- Step 9: Final Reconciliation Report -->
+    <bpmn2:task id="Task_9" name="Lập biên bản đối soát cuối">
+      <bpmn2:incoming>Flow_26</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_27</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Step 10: Process Payment -->
+    <bpmn2:task id="Task_10" name="Thực hiện thanh toán">
+      <bpmn2:incoming>Flow_27</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_28</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- End Event -->
+    <bpmn2:endEvent id="EndEvent_1" name="Đối soát hoàn tất">
+      <bpmn2:incoming>Flow_28</bpmn2:incoming>
+    </bpmn2:endEvent>
+
+    <!-- Invalid Invoice End -->
+    <bpmn2:endEvent id="EndEvent_2" name="Hóa đơn bị trả lại">
+      <bpmn2:incoming>Flow_4b</bpmn2:incoming>
+    </bpmn2:endEvent>
+
+    <!-- Discrepancy End (from G2) -->
+    <bpmn2:task id="Task_Discrep" name="Ghi nhận lệch và điều tra">
+      <bpmn2:incoming>Flow_8b</bpmn2:incoming>
+      <bpmn2:outgoing>Flow_12</bpmn2:outgoing>
+    </bpmn2:task>
+
+    <!-- Sequence Flows -->
+    <bpmn2:sequenceFlow id="Flow_1" sourceRef="StartEvent_1" targetRef="Task_1"/>
+    <bpmn2:sequenceFlow id="Flow_2" sourceRef="Task_1" targetRef="Gateway_1"/>
+    <bpmn2:sequenceFlow id="Flow_3" name="Hợp lệ" sourceRef="Gateway_1" targetRef="Task_2"/>
+    <bpmn2:sequenceFlow id="Flow_4" name="Không hợp lệ" sourceRef="Gateway_1" targetRef="Task_2b"/>
+    <bpmn2:sequenceFlow id="Flow_4b" sourceRef="Task_2b" targetRef="EndEvent_2"/>
+    <bpmn2:sequenceFlow id="Flow_5" sourceRef="Task_2" targetRef="Gateway_2"/>
+    <bpmn2:sequenceFlow id="Flow_6" name="Khớp" sourceRef="Gateway_2" targetRef="Task_3"/>
+    <bpmn2:sequenceFlow id="Flow_7" name="Lệch" sourceRef="Gateway_2" targetRef="Task_3b"/>
+    <bpmn2:sequenceFlow id="Flow_8" sourceRef="Task_3" targetRef="Gateway_3"/>
+    <bpmn2:sequenceFlow id="Flow_8b" sourceRef="Task_3b" targetRef="Task_Discrep"/>
+    <bpmn2:sequenceFlow id="Flow_9" name="Bán hết" sourceRef="Gateway_3" targetRef="Task_4a"/>
+    <bpmn2:sequenceFlow id="Flow_10" name="Còn tồn" sourceRef="Gateway_3" targetRef="Task_4b"/>
+    <bpmn2:sequenceFlow id="Flow_11" name="Mất/Hỏng" sourceRef="Gateway_3" targetRef="Task_4c"/>
+    <bpmn2:sequenceFlow id="Flow_12" sourceRef="Task_4a" targetRef="Task_5"/>
+    <bpmn2:sequenceFlow id="Flow_12" sourceRef="Task_4b" targetRef="Task_5"/>
+    <bpmn2:sequenceFlow id="Flow_12" sourceRef="Task_4c" targetRef="Task_5"/>
+    <bpmn2:sequenceFlow id="Flow_13" sourceRef="Task_5" targetRef="Gateway_4"/>
+    <bpmn2:sequenceFlow id="Flow_14" name="Khớp" sourceRef="Gateway_4" targetRef="Task_6a"/>
+    <bpmn2:sequenceFlow id="Flow_15" name="Lệch" sourceRef="Gateway_4" targetRef="Task_6b"/>
+    <bpmn2:sequenceFlow id="Flow_16" sourceRef="Task_6a" targetRef="Gateway_7"/>
+    <bpmn2:sequenceFlow id="Flow_17" sourceRef="Task_6b" targetRef="Gateway_5"/>
+    <bpmn2:sequenceFlow id="Flow_18" name="Hàng tặng/Hỏng/Mất" sourceRef="Gateway_5" targetRef="Task_7a"/>
+    <bpmn2:sequenceFlow id="Flow_19" name="Lỗi nhập liệu" sourceRef="Gateway_5" targetRef="Task_7b"/>
+    <bpmn2:sequenceFlow id="Flow_20" name="Cải giá" sourceRef="Gateway_5" targetRef="Task_7c"/>
+    <bpmn2:sequenceFlow id="Flow_21" name="Lỗi khác" sourceRef="Gateway_5" targetRef="Task_7d"/>
+    <bpmn2:sequenceFlow id="Flow_22" sourceRef="Task_7a" targetRef="Gateway_6"/>
+    <bpmn2:sequenceFlow id="Flow_22" sourceRef="Task_7b" targetRef="Gateway_6"/>
+    <bpmn2:sequenceFlow id="Flow_22" sourceRef="Task_7c" targetRef="Gateway_6"/>
+    <bpmn2:sequenceFlow id="Flow_22" sourceRef="Task_7d" targetRef="Gateway_6"/>
+    <bpmn2:sequenceFlow id="Flow_23" name="Có" sourceRef="Gateway_6" targetRef="Task_8a"/>
+    <bpmn2:sequenceFlow id="Flow_24" name="Không" sourceRef="Gateway_6" targetRef="Task_8b"/>
+    <bpmn2:sequenceFlow id="Flow_25" sourceRef="Task_8a" targetRef="Gateway_7"/>
+    <bpmn2:sequenceFlow id="Flow_25" sourceRef="Task_8b" targetRef="Gateway_7"/>
+    <bpmn2:sequenceFlow id="Flow_26" sourceRef="Gateway_7" targetRef="Task_9"/>
+    <bpmn2:sequenceFlow id="Flow_27" sourceRef="Task_9" targetRef="Task_10"/>
+    <bpmn2:sequenceFlow id="Flow_28" sourceRef="Task_10" targetRef="EndEvent_1"/>
+
+  </bpmn2:process>
+
+  <bpmndi:BPMNDiagram id="Diagram_1">
+    <bpmndi:BPMNPlane id="Plane_1" bpmnElement="Process_1">
+      <!-- Visual elements would be defined here if rendering -->
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</bpmn2:definitions>
