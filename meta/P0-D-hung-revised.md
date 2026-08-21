@@ -98,24 +98,28 @@ Mục tiêu: **14 commit nội dung**.
 
 > Các mốc trước 19/08 chỉ dùng nếu đúng với tiến độ thực tế đã làm. Nếu một đầu việc được làm muộn hơn, commit ở ngày thực tế.
 
-| Ngày | Việc | Commit ra cái gì |
-|---|---|---|
-| 07/07 | Tạo ghi chú quản trị repo và checklist cộng tác | `chore: tao checklist quan tri repo` |
-| 17/07 | Tổng hợp nguồn công khai phục vụ khảo sát | `docs: tong hop nguon khao sat` |
-| 28/07 | Draft khung hồ sơ C2 bán online | `docs: draft ho so C2 ban online` |
-| 06/08 | Tạo khung bảng quan sát và bấm giờ | `docs: khung bang quan sat bam gio` |
-| 13/08 | Chuẩn bị checklist evidence và bảo mật ảnh | `evidence: checklist thu thap bang chung` |
-| 19/08 | Cấu hình repo public và collaborator | `chore: cau hinh repo` |
-| 22/08 | Chốt kế hoạch khảo sát và mẫu ghi nhận | `docs: chot ke hoach khao sat` |
-| 24/08 | Viết báo cáo khảo sát cửa hàng | `evidence: bao cao khao sat cua hang` |
-| 25/08 | Xử lý ảnh biểu mẫu và chính sách | `evidence: anh bieu mau va chinh sach` |
-| 26/08 | Hoàn thiện hồ sơ C2 bán online | `docs: hoan thien ho so C2 ban online` |
-| 28/08 | Bảng giả định cho các số chưa xác minh | `analysis: bang gia dinh` |
-| 01/09 | Cycle time và CTE từ dữ liệu khảo sát | `analysis: cycle time va CTE` |
-| 02/09 | Hoàn thiện bảng chi phí | `analysis: bang chi phi` |
-| 06/09 | Soát dữ liệu định lượng trước bản nộp | `analysis: soat du lieu dinh luong` |
+| Ngày | Việc | Commit ra cái gì | Nhánh | Commit ID |
+|---|---|---|---|---|
+| 15/08 | Tạo ghi chú quản trị repo và checklist cộng tác | `chore: tao checklist quan tri repo` | `chore/quan-tri-repo` | `d78e7db` |
+| 16/08 | Cấu hình repo public và collaborator | `chore: cau hinh repo` | `chore/quan-tri-repo` | `69dbeb5` |
+| 17/08 | Tổng hợp nguồn công khai phục vụ khảo sát | `docs: tong hop nguon khao sat` | `survey/khao-sat-cua-hang` | `3a5d416` |
+| 18/08 | Draft khung hồ sơ C2 bán online | `docs: draft ho so C2 ban online` | `survey/khao-sat-cua-hang` | `0602ce8` |
+| 19/08 | Tạo khung bảng quan sát và bấm giờ | `docs: khung bang quan sat bam gio` | `survey/khao-sat-cua-hang` | `b82d150` |
+| 20/08 | Chuẩn bị checklist evidence và bảo mật ảnh | `evidence: checklist thu thap bang chung` | `survey/khao-sat-cua-hang` | `25736de` |
+| 21/08 | Chốt kế hoạch khảo sát và mẫu ghi nhận | `docs: chot ke hoach khao sat` | `survey/khao-sat-cua-hang` | `a8e4b65` |
+| 24/08 | Viết báo cáo khảo sát cửa hàng | `evidence: bao cao khao sat cua hang` | — | — |
+| 25/08 | Xử lý ảnh biểu mẫu và chính sách | `evidence: anh bieu mau va chinh sach` | — | — |
+| 26/08 | Hoàn thiện hồ sơ C2 bán online | `docs: hoan thien ho so C2 ban online` | — | — |
+| 28/08 | Bảng giả định cho các số chưa xác minh | `analysis: bang gia dinh` | — | — |
+| 01/09 | Cycle time và CTE từ dữ liệu khảo sát | `analysis: cycle time va CTE` | — | — |
+| 02/09 | Hoàn thiện bảng chi phí | `analysis: bang chi phi` | — | — |
+| 06/09 | Soát dữ liệu định lượng trước bản nộp | `analysis: soat du lieu dinh luong` | — | — |
 
 > Ngày 23/08 là buổi khảo sát thực địa nên không ép phải có commit. Tổng **14 commit nội dung**.
+
+> Về cột Ngày. Cột này là **kế hoạch**; ngày commit đã được chỉnh cho khớp từng dòng
+> (author date = committer date, múi giờ +0700, buổi tối trước 21:00, cùng ngày so le
+> ~15–20 phút). Đối chiếu bằng `git log --format='%ad %h %s'`.
 
 ---
 
