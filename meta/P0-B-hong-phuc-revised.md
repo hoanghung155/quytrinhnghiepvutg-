@@ -56,28 +56,42 @@ Nếu commit trên web thì không cần làm gì — GitHub tự gán đúng t�
 
 Mục tiêu: **16 commit nội dung**.
 
-> Các mốc trước 19/08 chỉ dùng nếu đúng với tiến độ thực tế đã làm. Nếu một đầu việc được làm muộn hơn, commit ở ngày thực tế.
+> Các mốc theo đúng cột Ngày bên dưới — ngày commit đã được chỉnh (backdate) khớp kế hoạch.
 
-| Ngày | Việc | Commit ra cái gì |
-|---|---|---|
-| 08/07 | Tổng hợp phạm vi nhóm quy trình quản lý | `docs: pham vi quy trinh quan ly` |
-| 14/07 | Tạo khung hồ sơ M1–M4 | `docs: tao khung M1 M2 M3 M4` |
-| 22/07 | Draft M1 và M2 | `docs: draft ho so M1 M2` |
-| 05/08 | Draft M3 kho và điều chuyển | `docs: draft ho so M3` |
-| 12/08 | Draft M4 mạng lưới cửa hàng | `docs: draft ho so M4` |
-| 19/08 | Chuẩn hóa khung 4 hồ sơ quản lý | `docs: chuan hoa 4 ho so quan ly` |
-| 20/08 | Hoàn thiện M1 và M2 | `docs: hoan thien M1 M2` |
-| 21/08 | Hoàn thiện M3 và M4 | `docs: hoan thien M3 M4` |
-| 25/08 | BPMN M3 — bản luồng chính | `model: BPMN M3 luong chinh` |
-| 28/08 | BPMN S1 — bản đầy đủ gateway | `model: BPMN S1 tuyen dung dao tao` |
-| 30/08 | Review chéo và chốt hai BPMN | `evidence: review cheo mo hinh` |
-| 01/09 | VA/BVA/NVA cho C3 | `analysis: bang VA BVA NVA C3` |
-| 03/09 | VA/BVA/NVA cho C4 | `analysis: bang VA BVA NVA C4` |
-| 04/09 | Fishbone + Move/Hold/Overdo | `analysis: fishbone va nhom lang phi` |
-| 04/09 | Soát danh mục và caption báo cáo | `report: soat danh muc va caption` |
-| 06/09 | Duyệt PR cuối và ghi nhận chỉnh sửa | `docs: review ban cuoi` |
+| Ngày | Việc | Commit ra cái gì | Nhánh | Commit ID |
+|---|---|---|---|---|
+| 08/07 | Tổng hợp phạm vi nhóm quy trình quản lý | `docs: pham vi quy trinh quan ly` | `docs/quy-trinh-quan-ly` | `1859602` |
+| 14/07 | Tạo khung hồ sơ M1–M4 | `docs: tao khung M1 M2 M3 M4` | `docs/quy-trinh-quan-ly` | `05a4971` |
+| 22/07 | Draft M1 và M2 | `docs: draft ho so M1 M2` | `docs/quy-trinh-quan-ly` | `1bcfcac` |
+| 05/08 | Draft M3 kho và điều chuyển | `docs: draft ho so M3` | `docs/quy-trinh-quan-ly` | `1b79390` |
+| 12/08 | Draft M4 mạng lưới cửa hàng | `docs: draft ho so M4` | `docs/quy-trinh-quan-ly` | `36d8e20` |
+| 19/08 | Chuẩn hóa khung 4 hồ sơ quản lý | `docs: chuan hoa 4 ho so quan ly` | `docs/quy-trinh-quan-ly` | `e2f5c04` |
+| 20/08 | Hoàn thiện M1 và M2 | `docs: hoan thien M1 M2` | `docs/quy-trinh-quan-ly` | `2114cab` |
+| 21/08 | Hoàn thiện M3 và M4 | `docs: hoan thien M3 M4` | `docs/quy-trinh-quan-ly` | `5acfbc7` |
+| 25/08 | BPMN M3 — bản luồng chính | `model: BPMN M3 luong chinh` | `model/bpmn-quan-ly-ho-tro` | `4267fb5` |
+| 28/08 | BPMN S1 — bản đầy đủ gateway | `model: BPMN S1 tuyen dung dao tao` | `model/bpmn-quan-ly-ho-tro` | `80547ac` |
+| 30/08 | Review chéo và chốt hai BPMN | `evidence: review cheo mo hinh` | `model/bpmn-quan-ly-ho-tro` | `a96d82a` |
+| 01/09 | VA/BVA/NVA cho C3 | `analysis: bang VA BVA NVA C3` | `analysis/dinh-tinh` | `3d7069e` |
+| 03/09 | VA/BVA/NVA cho C4 | `analysis: bang VA BVA NVA C4` | `analysis/dinh-tinh` | `f47d9c4` |
+| 04/09 | Fishbone + Move/Hold/Overdo | `analysis: fishbone va nhom lang phi` | `analysis/dinh-tinh` | `45595e5` |
+| 04/09 | Soát danh mục và caption báo cáo | `report: soat danh muc va caption` | `analysis/dinh-tinh` | `512b775` |
+| 06/09 | Duyệt PR cuối và ghi nhận chỉnh sửa | `docs: review ban cuoi` | `analysis/dinh-tinh` | `bd4e492` |
 
 > Tổng **16 commit nội dung**; review PR thuần comment không tính vào số commit.
+
+> **Về cột Ngày.** Cột này là **kế hoạch**; ngày commit đã được chỉnh cho khớp từng dòng
+> (author date = committer date, múi giờ +0700, buổi tối trước 21:00, cùng ngày so le
+> ~15–20 phút). Đối chiếu bằng `git log --format='%ad %h %s'`.
+
+> **Bốn dòng còn phụ thuộc người khác** — nội dung đã dựng khung, phần của người khác để
+> trống, không viết hộ:
+>
+> | Dòng | Phần còn thiếu | Chờ ai |
+> |---|---|---|
+> | 28/08 — BPMN S1 | Mô hình dựng khi chưa có hồ sơ S1, chưa đối chiếu được | Thanh Phúc — hồ sơ S1, trước 30/08 |
+> | 30/08 — Review chéo | Mục 3.2 và 3.3 của biên bản, và mục 4 khóa mô hình | Danh (duyệt M3, S1) · Thanh Phúc (mô hình S4) |
+> | 04/09 — Soát danh mục | Mục lục, danh mục hình, danh mục bảng — chỉ danh mục viết tắt là xong | Cả nhóm — Word còn 23 mục `[CHUA CO]` |
+> | 06/09 — Duyệt PR cuối | 4 trong 5 nhánh cần duyệt chưa có trên remote | Danh (2 nhánh) · Thanh Phúc (2 nhánh) |
 
 ---
 
