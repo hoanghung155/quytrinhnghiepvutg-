@@ -5,7 +5,7 @@
 ## 1. Thời gian và địa điểm
 
 - **Ngày dự kiến:** 23/08/2026, chót 26/08/2026 (theo mốc cứng ở
-  [P0-chung-quy-uoc-revised.md](../../meta/P0-chung-quy-uoc-revised.md)).
+  P0-chung-quy-uoc-revised.md, giữ ngoài repo).
 - **Địa điểm:** một cửa hàng TGDĐ bất kỳ, chưa chốt chi nhánh cụ thể — chốt trước tối
   22/08 để kịp hẹn.
 - **Thời lượng:** khoảng 3 tiếng.

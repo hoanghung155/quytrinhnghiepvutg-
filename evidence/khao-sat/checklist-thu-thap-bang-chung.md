@@ -6,7 +6,7 @@
 
 - [ ] Mang điện thoại đủ pin/bộ nhớ để chụp và bấm giờ.
 - [ ] Mang sổ ghi tay dự phòng nếu điện thoại hết pin.
-- [ ] In sẵn 6 câu hỏi ngắn (xem [P0-D-hung-revised.md](../../meta/P0-D-hung-revised.md)).
+- [ ] In sẵn 6 câu hỏi ngắn (xem P0-D-hung-revised.md, giữ ngoài repo).
 - [ ] Rủ thêm 1 bạn đi cùng — một người hỏi, một người bấm giờ/chụp.
 
 ## 2. Ảnh cần chụp (4–6 ảnh)

@@ -18,7 +18,7 @@ khi `git log` hiển thị trên terminal Windows mặc định.
 
 ## 2. Thư mục cấp 1
 
-Trùng đúng với tiền tố commit ở mục 5 P0-chung, để nhìn commit là biết file nằm đâu:
+Trùng đúng với tiền tố commit đã quy ước, để nhìn commit là biết file nằm đâu:
 
 | Thư mục | Tiền tố commit tương ứng |
 |---|---|
@@ -28,7 +28,6 @@ Trùng đúng với tiền tố commit ở mục 5 P0-chung, để nhìn commit 
 | `evidence/` | `evidence:` |
 | `report/` | `report:` |
 | `slide/` | `slide:` |
-| `meta/` | `chore:` hoặc `docs:` |
 
 ## 3. Đặt tên theo loại file
 
@@ -55,7 +54,7 @@ phân biệt với bản đang sửa.
 
 ## 5. File tạm và file không đưa lên repo
 
-Đã cấu hình trong [.gitignore](.gitignore): file tạm Office `~$*`, slide bài giảng PDF,
+Đã cấu hình trong [.gitignore](../.gitignore): file tạm Office `~$*`, slide bài giảng PDF,
 thư mục build, môi trường ảo Python. Trước khi commit chạy `git status` xem có file lạ
 lọt vào không.
 

@@ -44,5 +44,5 @@ Sáu quy trình được mô hình hóa BPMN: **M2, C3, C4, M3, S1, S4** — m�
 
 ---
 
-Quy ước làm việc nhóm, phân công và nhịp commit xem
-[meta/P0-chung-quy-uoc-revised.md](meta/P0-chung-quy-uoc-revised.md).
+Quy ước đặt tên file và thư mục xem
+[docs/quy-uoc-dat-ten-file.md](docs/quy-uoc-dat-ten-file.md).

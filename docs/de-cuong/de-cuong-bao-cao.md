@@ -12,7 +12,7 @@ Cấu trúc bám rubric 5 tiêu chí. Mỗi mục ghi rõ ai viết và sản ph
 | 1.2 | Phạm vi đề tài và giới hạn | Danh | [pham-vi-de-tai.md](pham-vi-de-tai.md) |
 | 1.3 | Chuỗi giá trị và định vị quy trình | Danh | — |
 | 1.4 | **Hình 1.1** — Kiến trúc 12 quy trình theo 3 lớp | Danh | [kien-truc-quy-trinh/](../kien-truc-quy-trinh/) |
-| 1.5 | Bảng phân công nhóm (Bảng 0.2) | Danh | [meta/](../../meta/) |
+| 1.5 | Bảng phân công nhóm (Bảng 0.2) | Danh | — (giữ ngoài repo) |
 
 ## Chương 2 — Cơ sở lý thuyết và phương pháp
 

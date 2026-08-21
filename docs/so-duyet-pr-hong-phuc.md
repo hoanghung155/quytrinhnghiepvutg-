@@ -2,7 +2,7 @@
 
 **Người lập:** Nguyễn Thị Hồng Phúc · **Phiên bản:** v1 · **Cập nhật:** 20/08/2026
 
-Theo bảng phân công ở [P0-chung mục 4](../meta/P0-chung-quy-uoc-revised.md), Hồng Phúc là
+Theo bảng phân công ở P0-chung mục 4 (giữ ngoài repo), Hồng Phúc là
 người duyệt của **5 nhánh** — nhiều nhất nhóm. File này ghi lại từng lượt duyệt để dùng
 làm bằng chứng cho mục 2.5 Chương 2, cùng với comment trực tiếp trên pull request.
 
