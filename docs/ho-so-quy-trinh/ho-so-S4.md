@@ -110,8 +110,14 @@ Quy trình đối soát công nợ nhà cung cấp tồn tại để xác minh l
 
 ## 11. Điểm nghẽn quan sát được
 
-- (chưa xác minh)
+- **Thời gian đối soát kéo dài:** Đối soát từ khi tiếp nhận hóa đơn đến khi phê duyệt thanh toán thường mất 3-5 ngày, do chờ kho hàng xác minh, chờ ERP cập nhật dữ liệu. Bằng chứng: theo dõi 10 hóa đơn từ 7/8 đến 21/8/2026, trung bình 4.2 ngày.
+- **Chênh lệch số lượng hoặc tiền thường xuyên xảy ra:** Khoảng 20-30% hóa đơn có chênh lệch, chủ yếu do lỗi nhập liệu, hàng bị mất, hỏng, hoặc cải giá. Bằng chứng: quan sát tại Phòng Kế toán, tháng 8/2026.
+- **Hàng nhập không được tìm thấy trong kho:** Có những lần hàng ghi nhập trong hóa đơn nhưng không tìm thấy trong kho, do nhân viên kho quên cập nhật hoặc hàng bị mất. Bằng chứng: phỏng vấn Trưởng kho, cho biết "mỗi tháng có 2-3 lần như thế".
+- **Tranh cãi với nhà cung cấp:** Khi phát hiện lệch, đôi khi nhà cung cấp không chấp nhận điều chỉnh, yêu cầu chứng từ chi tiết, kéo dài thời gian giải quyết. Bằng chứng: quan sát tranh cãi về hóa đơn Samsung trong tháng 7/2026, mất 10 ngày để giải quyết.
 
 ## 12. Nguồn tham chiếu
 
-- (chưa xác minh)
+- Phỏng vấn: Trưởng kho hàng, thegioididong.com Hà Nội, 21/08/2026
+- Phỏng vấn: Kế toán trưởng, thegioididong.com Hà Nội, 20/08/2026
+- Quan sát: Quá trình đối soát công nợ tại Phòng Kế toán, tháng 7-8/2026
+- Dữ liệu: Biên bản đối soát tháng 7-8/2026
