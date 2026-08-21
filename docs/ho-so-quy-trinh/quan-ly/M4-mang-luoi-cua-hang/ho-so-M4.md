@@ -1,7 +1,7 @@
 # M4 — Mạng lưới cửa hàng
 
 **Lớp:** quản lý
-**Người lập:** Nguyễn Thị Hồng Phúc · **Phiên bản:** v1 (draft)
+**Người lập:** Nguyễn Thị Hồng Phúc · **Phiên bản:** v2 (hoàn thiện)
 **Có mô hình BPMN:** không
 
 ## 1. Mục đích
@@ -114,7 +114,20 @@ giới hạn này trong Chương 3.
 
 ## 9. Chỉ số đo lường
 
-(chưa hoàn thiện — chốt cách đo ở bản v2)
+| Chỉ số | Đơn vị | Cách đo | Giá trị ghi nhận | Nguồn |
+|---|---|---|---|---|
+| Số điểm bán đang hoạt động của chuỗi | cửa hàng | Số công bố trong báo cáo thường niên MWG | (chờ bổ sung — kèm ngày truy cập) | tài liệu công khai |
+| Thời gian từ khi duyệt mở điểm bán tới ngày khai trương | tháng | Hỏi bộ phận phát triển mạng lưới | (chưa xác minh — không có kênh tiếp cận) | ngoài tầm khảo sát |
+| Thời gian đạt điểm hòa vốn của điểm bán mới | tháng | Dữ liệu tài chính nội bộ | (chưa xác minh) | ngoài tầm khảo sát |
+| Tỷ lệ điểm bán bị đưa vào diện rà soát mỗi kỳ | % | Dữ liệu nội bộ | (chưa xác minh) | ngoài tầm khảo sát |
+| Số điểm ra quyết định trong quy trình | điểm | Đếm từ bảng mục 6 | 9 | phân tích hồ sơ |
+
+Chỉ số đầu tiên là chỉ số duy nhất có khả năng lấy được **từ nguồn công khai** — báo cáo
+thường niên của MWG có công bố số lượng điểm bán theo chuỗi. Cần bổ sung kèm ngày truy
+cập trước khi nộp. Ba chỉ số giữa cần dữ liệu nội bộ cấp tập đoàn, giữ `(chưa xác minh)`.
+
+M4 là hồ sơ có ít chỉ số đo được nhất trong bốn hồ sơ quản lý — đây là hệ quả trực tiếp
+của việc chọn phạm vi khảo sát ở cấp cửa hàng, và cần nêu thẳng ở Chương 3.
 
 ## 10. Hệ thống và biểu mẫu liên quan
 
@@ -127,7 +140,22 @@ giới hạn này trong Chương 3.
 
 ## 11. Điểm nghẽn quan sát được
 
-(chưa hoàn thiện — điền ở bản v2 sau khi rà lại bảng bước)
+| # | Điểm nghẽn | Vì sao là nghẽn | Nhóm lãng phí | Bằng chứng cần có |
+|---|---|---|---|---|
+| B1 | Bước 9 — đàm phán điều khoản thuê với chủ mặt bằng | Phụ thuộc hoàn toàn actor bên ngoài; hồ sơ mặt bằng nằm chờ không xác định thời hạn | **Hold** | (chưa xác minh) |
+| B2 | G6 — không thỏa thuận được, phải quay lại bước 6 tìm mặt bằng khác | Toàn bộ công khảo sát, đánh giá độ phủ và thẩm định tài chính đã làm bị bỏ phí | **Overdo** | (chưa xác minh) |
+| B3 | Bước 4 — thu thập giải trình từ nhiều cấp trước khi kết luận | Chuỗi hỏi qua quản lý cửa hàng rồi quản lý vùng kéo dài kỳ rà soát | **Hold** | (chưa xác minh) |
+| B4 | Bước 13 — xử lý tồn kho khi đóng điểm bán | Phát sinh điều chuyển toàn bộ tồn sang điểm khác, là vận chuyển thuần túy không tạo giá trị | **Move** | Đối chiếu với M3 |
+| B5 | Bước 14 — chỉ phát hiện điểm bán mới kém hiệu quả sau một thời gian theo dõi | Chi phí thuê và vận hành đã phát sinh trước khi có tín hiệu để can thiệp | **Hold** | (chưa xác minh) |
+
+Toàn bộ năm điểm đều ở trạng thái `(chưa xác minh)` trừ B4 — đây là hồ sơ có mức chắc
+chắn thấp nhất trong bốn hồ sơ quản lý. Khi đưa vào Issue Register, **phải ghi rõ mức độ
+tin cậy thấp** thay vì xếp ngang hàng với các phát hiện đã có bằng chứng quan sát.
+
+B4 liên thông trực tiếp với M3: quyết định đóng điểm bán ở M4 tạo ra một đợt điều chuyển
+lớn ở M3, nhưng khối lượng đó không nằm trong kế hoạch điều chuyển thông thường.
+
+Năm điểm B1–B5 đánh số tiếp từ IR-14 ở nhánh `analysis/dinh-tinh`, kèm ghi chú mức tin cậy.
 
 ## 12. Nguồn tham chiếu
 
