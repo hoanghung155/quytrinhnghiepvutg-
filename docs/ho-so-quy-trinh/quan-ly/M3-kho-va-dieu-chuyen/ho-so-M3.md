@@ -1,7 +1,7 @@
 # M3 — Kho và điều chuyển
 
 **Lớp:** quản lý
-**Người lập:** Nguyễn Thị Hồng Phúc · **Phiên bản:** v1 (draft)
+**Người lập:** Nguyễn Thị Hồng Phúc · **Phiên bản:** v2 (hoàn thiện)
 **Có mô hình BPMN:** có — sẽ dựng ở nhánh `model/bpmn-quan-ly-ho-tro`
 
 ## 1. Mục đích
@@ -121,7 +121,21 @@ R1–R4 đưa vào bảng giả định Chương 4, hỏi ở câu Q2 và Q3 tro
 
 ## 9. Chỉ số đo lường
 
-(chưa hoàn thiện — chốt cách đo ở bản v2)
+| Chỉ số | Đơn vị | Cách đo | Giá trị ghi nhận | Nguồn |
+|---|---|---|---|---|
+| Thời gian từ khi duyệt điều chuyển tới khi cửa hàng đích nhận được hàng | giờ | Câu hỏi Q3 ở buổi khảo sát | (chờ khảo sát 23/08) | phỏng vấn quản lý cửa hàng |
+| Tần suất điều chuyển gấp phục vụ đơn đã chốt | lần/tuần | Câu hỏi Q2 ở buổi khảo sát | (chờ khảo sát 23/08) | phỏng vấn quản lý cửa hàng |
+| Tần suất kiểm kê tại cửa hàng | lần/tháng | Câu hỏi Q4 ở buổi khảo sát | (chờ khảo sát 23/08) | phỏng vấn quản lý cửa hàng |
+| Tỷ lệ yêu cầu điều chuyển bị từ chối vì không có cửa hàng nguồn | % | Đếm nhánh "không" ở G8 | (chưa xác minh — dữ liệu nội bộ ERP) | ngoài tầm khảo sát |
+| Số điểm ra quyết định trong quy trình | điểm | Đếm từ bảng mục 6 | 12 | phân tích hồ sơ |
+
+Ba chỉ số đầu là phần **khả thi nhất trong toàn bộ bốn hồ sơ quản lý** — đều hỏi được
+trực tiếp tại cửa hàng ngày 23/08. Chỉ số đầu tiên đặc biệt quan trọng vì nó định lượng
+thời gian chờ mà khách C3 và C4 phải chịu khi rơi vào nhánh điều chuyển.
+
+> Ba dòng `(chờ khảo sát 23/08)` phụ thuộc buổi khảo sát của Hưng. Nếu buổi khảo sát không
+> diễn ra hoặc không hỏi được, giữ nguyên trạng thái chờ và ghi vào bảng giả định Chương
+> 4 — **không thay bằng số ước lượng**.
 
 ## 10. Hệ thống và biểu mẫu liên quan
 
@@ -135,7 +149,21 @@ R1–R4 đưa vào bảng giả định Chương 4, hỏi ở câu Q2 và Q3 tro
 
 ## 11. Điểm nghẽn quan sát được
 
-(chưa hoàn thiện — điền ở bản v2 sau khi rà lại bảng bước)
+| # | Điểm nghẽn | Vì sao là nghẽn | Nhóm lãng phí | Bằng chứng cần có |
+|---|---|---|---|---|
+| B1 | Bước 9 — vận chuyển giữa kho tổng và cửa hàng, hoặc giữa hai cửa hàng | Khoảng chờ dài nhất của M3, do actor bên ngoài thực hiện; khách C3 và C4 chờ trực tiếp trên khoảng này | **Move** + **Hold** | Câu hỏi Q3 |
+| B2 | Bước 12–14 — chuỗi duyệt trước khi được xuất chuyển | Yêu cầu gấp vẫn phải đi qua dò nguồn và duyệt, cộng thêm vào thời gian khách chờ | **Hold** | Câu hỏi Q2 |
+| B3 | G8 — không tìm được cửa hàng nguồn, yêu cầu bị từ chối | Công tư vấn và công lập hồ sơ ở C3 hoặc C4 trước đó bị bỏ phí hoàn toàn | **Overdo** | (chưa xác minh) |
+| B4 | Bước 16–18 — kiểm kê và xử lý chênh lệch | Chênh lệch tồn buộc phải kiểm đếm lại và truy nguyên nhân, là việc làm lại thuần túy | **Overdo** | Câu hỏi Q4 |
+| B5 | Bước 10 — cửa hàng chưa xác nhận nhận hàng thì tồn chưa khả dụng | Hàng đã nằm tại cửa hàng nhưng chưa bán được, tạo khoảng tồn đọng do thủ tục | **Hold** | Quan sát tại cửa hàng |
+
+B1 là điểm nghẽn liên thông quan trọng nhất của cả nhóm quản lý: nó là phần đuôi của hai
+phát hiện đã có ở lớp cốt lõi — **IR-08** (C3 hết hàng sau khi hồ sơ đã duyệt) và ngoại lệ
+E2 của C4. Khi khách C3 chờ điều chuyển, thời gian chờ đó thuộc về M3 chứ không thuộc C3,
+nhưng khách chỉ cảm nhận là "chờ lâu" — Chương 4 cần nói rõ chỗ này khi phân tích cycle
+time.
+
+Năm điểm B1–B5 là phát hiện mới, đánh số tiếp từ IR-14 ở nhánh `analysis/dinh-tinh`.
 
 ## 12. Nguồn tham chiếu
 
