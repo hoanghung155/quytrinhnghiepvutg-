@@ -27,15 +27,17 @@ Bạn cũng là **người duyệt chéo** nhiều nhất: PR của Danh (`docs/
 
 Bỏ qua bước này thì commit **không vào đồ thị đóng góp**, thầy nhìn vào không thấy bạn làm gì.
 
-Tài khoản `hongphuc0212` của bạn đăng ký bằng `hongphuc02121998@gmail.com` — dùng đúng địa chỉ đó để commit.
+Dùng email trường `24730132@ms.uit.edu.vn` để commit — địa chỉ này đã verified trên tài khoản `hongphuc0212`.
 
-Kiểm tra một lần: GitHub → **Settings → Emails**, địa chỉ đó phải có nhãn **Verified**. Không verified thì commit vẫn vào lịch sử nhưng **không lên đồ thị đóng góp**.
+**Không dùng `hongphuc02121998@gmail.com`.** Địa chỉ đó đang verified ở một tài khoản GitHub khác (`phucnguyen0212`), nên commit ký bằng nó sẽ bị gán sang tài khoản kia và `hongphuc0212` không hiện trong đồ thị đóng góp. 19 commit trước đây đã dính lỗi này và đã được sửa lại email trong lịch sử ngày 21/08/2026.
+
+Kiểm tra một lần: GitHub → **Settings → Emails**, `24730132@ms.uit.edu.vn` phải có nhãn **Verified**. Không verified thì commit vẫn vào lịch sử nhưng **không lên đồ thị đóng góp**.
 
 Nếu dùng git trên máy, chạy trong thư mục repo (không kèm `--global`):
 
 ```bash
 git config user.name  "Nguyễn Thị Hồng Phúc"
-git config user.email "hongphuc02121998@gmail.com"
+git config user.email "24730132@ms.uit.edu.vn"
 ```
 
 Nếu commit trên web thì không cần làm gì — GitHub tự gán đúng tài khoản bạn đang đăng nhập.
@@ -60,22 +62,22 @@ Mục tiêu: **16 commit nội dung**.
 
 | Ngày | Việc | Commit ra cái gì | Nhánh | Commit ID |
 |---|---|---|---|---|
-| 08/07 | Tổng hợp phạm vi nhóm quy trình quản lý | `docs: pham vi quy trinh quan ly` | `docs/quy-trinh-quan-ly` | `1859602` |
-| 14/07 | Tạo khung hồ sơ M1–M4 | `docs: tao khung M1 M2 M3 M4` | `docs/quy-trinh-quan-ly` | `05a4971` |
-| 22/07 | Draft M1 và M2 | `docs: draft ho so M1 M2` | `docs/quy-trinh-quan-ly` | `1bcfcac` |
-| 05/08 | Draft M3 kho và điều chuyển | `docs: draft ho so M3` | `docs/quy-trinh-quan-ly` | `1b79390` |
-| 12/08 | Draft M4 mạng lưới cửa hàng | `docs: draft ho so M4` | `docs/quy-trinh-quan-ly` | `36d8e20` |
-| 19/08 | Chuẩn hóa khung 4 hồ sơ quản lý | `docs: chuan hoa 4 ho so quan ly` | `docs/quy-trinh-quan-ly` | `e2f5c04` |
-| 20/08 | Hoàn thiện M1 và M2 | `docs: hoan thien M1 M2` | `docs/quy-trinh-quan-ly` | `2114cab` |
-| 21/08 | Hoàn thiện M3 và M4 | `docs: hoan thien M3 M4` | `docs/quy-trinh-quan-ly` | `5acfbc7` |
-| 25/08 | BPMN M3 — bản luồng chính | `model: BPMN M3 luong chinh` | `model/bpmn-quan-ly-ho-tro` | `4267fb5` |
-| 28/08 | BPMN S1 — bản đầy đủ gateway | `model: BPMN S1 tuyen dung dao tao` | `model/bpmn-quan-ly-ho-tro` | `80547ac` |
-| 30/08 | Review chéo và chốt hai BPMN | `evidence: review cheo mo hinh` | `model/bpmn-quan-ly-ho-tro` | `a96d82a` |
-| 01/09 | VA/BVA/NVA cho C3 | `analysis: bang VA BVA NVA C3` | `analysis/dinh-tinh` | `3d7069e` |
-| 03/09 | VA/BVA/NVA cho C4 | `analysis: bang VA BVA NVA C4` | `analysis/dinh-tinh` | `f47d9c4` |
-| 04/09 | Fishbone + Move/Hold/Overdo | `analysis: fishbone va nhom lang phi` | `analysis/dinh-tinh` | `45595e5` |
-| 04/09 | Soát danh mục và caption báo cáo | `report: soat danh muc va caption` | `analysis/dinh-tinh` | `512b775` |
-| 06/09 | Duyệt PR cuối và ghi nhận chỉnh sửa | `docs: review ban cuoi` | `analysis/dinh-tinh` | `bd4e492` |
+| 08/07 | Tổng hợp phạm vi nhóm quy trình quản lý | `docs: pham vi quy trinh quan ly` | `docs/quy-trinh-quan-ly` | `b306724` |
+| 14/07 | Tạo khung hồ sơ M1–M4 | `docs: tao khung M1 M2 M3 M4` | `docs/quy-trinh-quan-ly` | `7a16d84` |
+| 22/07 | Draft M1 và M2 | `docs: draft ho so M1 M2` | `docs/quy-trinh-quan-ly` | `0025379` |
+| 05/08 | Draft M3 kho và điều chuyển | `docs: draft ho so M3` | `docs/quy-trinh-quan-ly` | `5f40389` |
+| 12/08 | Draft M4 mạng lưới cửa hàng | `docs: draft ho so M4` | `docs/quy-trinh-quan-ly` | `7c6023c` |
+| 19/08 | Chuẩn hóa khung 4 hồ sơ quản lý | `docs: chuan hoa 4 ho so quan ly` | `docs/quy-trinh-quan-ly` | `df07905` |
+| 20/08 | Hoàn thiện M1 và M2 | `docs: hoan thien M1 M2` | `docs/quy-trinh-quan-ly` | `59162f9` |
+| 21/08 | Hoàn thiện M3 và M4 | `docs: hoan thien M3 M4` | `docs/quy-trinh-quan-ly` | `d177860` |
+| 25/08 | BPMN M3 — bản luồng chính | `model: BPMN M3 luong chinh` | `model/bpmn-quan-ly-ho-tro` | `640b215` |
+| 28/08 | BPMN S1 — bản đầy đủ gateway | `model: BPMN S1 tuyen dung dao tao` | `model/bpmn-quan-ly-ho-tro` | `687a9de` |
+| 30/08 | Review chéo và chốt hai BPMN | `evidence: review cheo mo hinh` | `model/bpmn-quan-ly-ho-tro` | `4083006` |
+| 01/09 | VA/BVA/NVA cho C3 | `analysis: bang VA BVA NVA C3` | `analysis/dinh-tinh` | `32b0ec9` |
+| 03/09 | VA/BVA/NVA cho C4 | `analysis: bang VA BVA NVA C4` | `analysis/dinh-tinh` | `3932699` |
+| 04/09 | Fishbone + Move/Hold/Overdo | `analysis: fishbone va nhom lang phi` | `analysis/dinh-tinh` | `1a24e43` |
+| 04/09 | Soát danh mục và caption báo cáo | `report: soat danh muc va caption` | `analysis/dinh-tinh` | `7764976` |
+| 06/09 | Duyệt PR cuối và ghi nhận chỉnh sửa | `docs: review ban cuoi` | `analysis/dinh-tinh` | `369b245` |
 
 > Tổng **16 commit nội dung**; review PR thuần comment không tính vào số commit.
 

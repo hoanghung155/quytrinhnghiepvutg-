@@ -100,13 +100,13 @@ Mục tiêu: **14 commit nội dung**.
 
 | Ngày | Việc | Commit ra cái gì | Nhánh | Commit ID |
 |---|---|---|---|---|
-| 15/08 | Tạo ghi chú quản trị repo và checklist cộng tác | `chore: tao checklist quan tri repo` | `chore/quan-tri-repo` | `d78e7db` |
-| 16/08 | Cấu hình repo public và collaborator | `chore: cau hinh repo` | `chore/quan-tri-repo` | `69dbeb5` |
-| 17/08 | Tổng hợp nguồn công khai phục vụ khảo sát | `docs: tong hop nguon khao sat` | `survey/khao-sat-cua-hang` | `3a5d416` |
-| 18/08 | Draft khung hồ sơ C2 bán online | `docs: draft ho so C2 ban online` | `survey/khao-sat-cua-hang` | `0602ce8` |
-| 19/08 | Tạo khung bảng quan sát và bấm giờ | `docs: khung bang quan sat bam gio` | `survey/khao-sat-cua-hang` | `b82d150` |
-| 20/08 | Chuẩn bị checklist evidence và bảo mật ảnh | `evidence: checklist thu thap bang chung` | `survey/khao-sat-cua-hang` | `25736de` |
-| 21/08 | Chốt kế hoạch khảo sát và mẫu ghi nhận | `docs: chot ke hoach khao sat` | `survey/khao-sat-cua-hang` | `a8e4b65` |
+| 15/08 | Tạo ghi chú quản trị repo và checklist cộng tác | `chore: tao checklist quan tri repo` | `chore/quan-tri-repo` | `f5447af` |
+| 16/08 | Cấu hình repo public và collaborator | `chore: cau hinh repo` | `chore/quan-tri-repo` | `cbd8bfe` |
+| 17/08 | Tổng hợp nguồn công khai phục vụ khảo sát | `docs: tong hop nguon khao sat` | `survey/khao-sat-cua-hang` | `65273bd` |
+| 18/08 | Draft khung hồ sơ C2 bán online | `docs: draft ho so C2 ban online` | `survey/khao-sat-cua-hang` | `c5b0131` |
+| 19/08 | Tạo khung bảng quan sát và bấm giờ | `docs: khung bang quan sat bam gio` | `survey/khao-sat-cua-hang` | `317867a` |
+| 20/08 | Chuẩn bị checklist evidence và bảo mật ảnh | `evidence: checklist thu thap bang chung` | `survey/khao-sat-cua-hang` | `847a70f` |
+| 21/08 | Chốt kế hoạch khảo sát và mẫu ghi nhận | `docs: chot ke hoach khao sat` | `survey/khao-sat-cua-hang` | `d6de8da` |
 | 24/08 | Viết báo cáo khảo sát cửa hàng | `evidence: bao cao khao sat cua hang` | — | — |
 | 25/08 | Xử lý ảnh biểu mẫu và chính sách | `evidence: anh bieu mau va chinh sach` | — | — |
 | 26/08 | Hoàn thiện hồ sơ C2 bán online | `docs: hoan thien ho so C2 ban online` | — | — |
