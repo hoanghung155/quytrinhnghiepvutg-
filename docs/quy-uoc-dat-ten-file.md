@@ -28,6 +28,7 @@ Trùng đúng với tiền tố commit đã quy ước, để nhìn commit là b
 | `evidence/` | `evidence:` |
 | `report/` | `report:` |
 | `slide/` | `slide:` |
+| `bai-tap-tuan/` | `bai-tap:` |
 
 ## 3. Đặt tên theo loại file
 

@@ -44,5 +44,19 @@ Sáu quy trình được mô hình hóa BPMN: **M2, C3, C4, M3, S1, S4** — m�
 
 ---
 
+## Cấu trúc thư mục
+
+| Thư mục | Nội dung |
+|---|---|
+| [docs/](docs/) | Hồ sơ 12 quy trình, đề cương, quy ước, công cụ khảo sát |
+| [model/](model/) | Mô hình BPMN và hình xuất |
+| [analysis/](analysis/) | Phân tích định tính, định lượng, Issue Register |
+| [evidence/](evidence/) | Bằng chứng khảo sát, biên bản review |
+| [report/](report/) | Báo cáo Word bản nộp |
+| [slide/](slide/) | Slide trình bày |
+| [bai-tap-tuan/](bai-tap-tuan/) | Bài tập trên lớp — **không thuộc đồ án**, loại trừ khi đóng gói nộp |
+
+---
+
 Quy ước đặt tên file và thư mục xem
 [docs/quy-uoc-dat-ten-file.md](docs/quy-uoc-dat-ten-file.md).
