@@ -3,7 +3,7 @@
 **Thời lượng: 27,5 phút, trần cứng 30 phút.** Quá giờ bị trừ điểm ở tiêu chí 5.
 **Một người nói cả năm phần: Ngọc Danh.**
 
-File slide: [bao-cao.pptx](bao-cao.pptx) – 40 slide, sinh lại bằng `python gen_slide.py`.
+File slide: [24730090_24730099_24730131_24730132.pptx](../24730090_24730099_24730131_24730132.pptx) – 40 slide, sinh lại bằng `python gen_slide.py`.
 
 ## Cách đọc file này
 

@@ -1,6 +1,6 @@
 # P0-D — Phần việc của Hưng (24730099, chủ repo)
 
-> **Cách dùng:** đọc [P0-chung-quy-uoc.md](P0-chung-quy-uoc.md) trước — nhất là mục 2 (danh tính git) và mục 3 (cách commit trên web nếu không cài git).
+> **Cách dùng:** đọc [P0-chung-quy-uoc-revised.md](P0-chung-quy-uoc-revised.md) trước — nhất là mục 2 (danh tính git) và mục 3 (cách commit trên web nếu không cài git).
 
 Đề tài: phân tích quy trình nghiệp vụ chuỗi bán lẻ **thegioididong.com + TopZone** (MWG), phạm vi thu hẹp ở điện thoại, laptop, máy tính bảng, phụ kiện. Môn Hệ thống Quản trị Qui trình Nghiệp vụ, GVHD ThS. Hà Lê Hoài Trung. Hạn nộp **07/09/2026**.
 

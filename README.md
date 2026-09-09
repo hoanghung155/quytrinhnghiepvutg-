@@ -44,5 +44,31 @@ Sáu quy trình được mô hình hóa BPMN: **M2, C3, C4, M3, S1, S4** — m�
 
 ---
 
+## Cấu trúc thư mục
+
+| Thư mục | Chứa gì | Số file |
+|---|---|---:|
+| [`docs/`](docs/) | Hồ sơ 12 quy trình, kiến trúc quy trình, bộ câu hỏi phỏng vấn, bảng thuật ngữ | 47 |
+| [`model/`](model/) | Sáu mô hình BPMN và ảnh xuất | 20 |
+| [`analysis/`](analysis/) | Phân tích định tính, định lượng, Issue Register | 12 |
+| [`evidence/`](evidence/) | Ảnh biểu mẫu, biên bản review, kết quả khảo sát cửa hàng | 5 |
+| [`report/`](report/) | Báo cáo Word và công cụ soát | 8 |
+| [`slide/`](slide/) | Slide trình bày | 3 |
+| [`bai-tap-tuan/`](bai-tap-tuan/) | 11 bài tập từng buổi, mỗi bài một thư mục `YYYY-MM-DD-<slug>/` | 31 |
+| [`nop/`](nop/) | Gói nộp cuối kỳ — bản đúng như đã nộp cho thầy | 77 |
+| [`meta/`](meta/) | Quy ước làm việc nhóm, phân công, checklist quản trị repo | 7 |
+
+Tên thư mục và tên file theo [docs/quy-uoc-dat-ten-file.md](docs/quy-uoc-dat-ten-file.md):
+không dấu, chữ thường, nối bằng `-`.
+
+Thư mục [`nop/do-an-cuoi-ky/`](nop/do-an-cuoi-ky/) trên repo đã đổi tên cho hợp quy ước.
+Tên thư mục **thật sự nộp** lên Drive lớp và e-learning là:
+
+```
+24730090_Nguyễn Ngọc Danh;24730099_Mai Hoàng Hưng;24730131_Nguyễn Thanh Phúc;24730132_Nguyễn Thị Hồng Phúc
+```
+
+---
+
 Quy ước làm việc nhóm, phân công và nhịp commit xem
 [meta/P0-chung-quy-uoc-revised.md](meta/P0-chung-quy-uoc-revised.md).

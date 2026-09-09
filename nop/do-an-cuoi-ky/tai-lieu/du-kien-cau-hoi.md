@@ -5,8 +5,8 @@ báo cáo mà nhóm mình ngồi nghe:
 
 | Buổi | Ngày | Ba nhóm báo cáo | Bản bóc |
 |---|---|---|---|
-| Buổi 07 | 24/08/2026 | Điện Máy Xanh · ACFC · FPT Long Châu | [review/R8-nhan-xet-buoi-07.md](../review/R8-nhan-xet-buoi-07.md) |
-| Buổi 09 | 07/09/2026 | Shopee · Hasaki · Highlands Coffee | [review/R16-buoi-bao-cao-07-09.md](../review/R16-buoi-bao-cao-07-09.md) |
+| Buổi 07 | 24/08/2026 | Điện Máy Xanh · ACFC · FPT Long Châu | `review/R8-nhan-xet-buoi-07.md` (ho so noi bo, khong day len repo lop) |
+| Buổi 09 | 07/09/2026 | Shopee · Hasaki · Highlands Coffee | `review/R16-buoi-bao-cao-07-09.md` (ho so noi bo, khong day len repo lop) |
 
 Nhãn cuối mỗi câu cho biết nó từ đâu ra. `[24/08]` và `[07/09]` là thầy đã hỏi thật, `[dự phòng]` là
 nhóm tự lường trước.

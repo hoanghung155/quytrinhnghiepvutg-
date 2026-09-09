@@ -367,7 +367,7 @@ Vấn đề truy nguyên: *Thời gian xử lý một yêu cầu bảo hành ho�
 | **Milieu** | Cuối tuần dồn tải tại quầy tiếp nhận **(ước lượng)** | Suy luận của nhóm, chưa quan sát | Đặt lịch hẹn bảo hành trước qua app để dàn tải; quan sát tại cửa hàng để xác nhận trước khi đề xuất chính thức |
 | **Milieu** | Chính sách công bố đổi nhiều lần (bản đang hiệu lực ghi ngày cập nhật 11.10.2024), làm kỳ vọng của khách lệch với quy định đang áp dụng | Báo cáo nguồn thứ cấp mục 0 giới hạn 3 | Hiển thị phiên bản chính sách áp dụng theo ngày mua trên phiếu tiếp nhận, để khách và nhân viên nói chuyện trên cùng một bản |
 
-![Hình 4.1, Xương cá 6M cho C4](../diagrams/fishbone-C4.png)
+![Hình 4.1, Xương cá 6M cho C4](../hinh-anh/fishbone-C4.png)
 
 *Hình 4.1, Sơ đồ xương cá sáu nhánh 6M, nguyên nhân kéo dài thời gian xử lý một yêu cầu bảo hành hoặc đổi trả (C4). Dựng từ chính bảng trên.*
 
