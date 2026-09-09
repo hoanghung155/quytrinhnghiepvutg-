@@ -1,6 +1,6 @@
 # P0-A — Phần việc của Danh (24730090, nhóm trưởng)
 
-> **Cách dùng:** đọc [P0-chung-quy-uoc.md](P0-chung-quy-uoc.md) trước. File này chạy trên máy của Danh, trong thư mục repo lớp đã clone: `Documents\me\quytrinhnghiepvutg-`.
+> **Cách dùng:** đọc [P0-chung-quy-uoc-revised.md](P0-chung-quy-uoc-revised.md) trước. File này chạy trên máy của Danh, trong thư mục repo lớp đã clone: `Documents\me\quytrinhnghiepvutg-`.
 
 Đề tài: phân tích quy trình nghiệp vụ chuỗi bán lẻ **thegioididong.com + TopZone** (MWG), phạm vi thu hẹp ở điện thoại, laptop, máy tính bảng, phụ kiện. Môn Hệ thống Quản trị Qui trình Nghiệp vụ, GVHD ThS. Hà Lê Hoài Trung. Hạn nộp **07/09/2026**.
 
