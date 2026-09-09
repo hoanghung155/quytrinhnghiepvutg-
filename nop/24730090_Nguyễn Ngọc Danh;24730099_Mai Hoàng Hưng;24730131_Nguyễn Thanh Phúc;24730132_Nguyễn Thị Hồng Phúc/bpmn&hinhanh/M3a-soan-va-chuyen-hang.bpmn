@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_M3a" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:collaboration id="Collaboration_M3a">
+    <bpmn:participant id="Participant_1" name="Chuỗi bán lẻ TGDĐ" processRef="Process_M3a" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_M3a" isExecutable="false">
+    <bpmn:laneSet id="LaneSet_M3a">
+      <bpmn:lane id="Lane_1" name="Bên gửi (kho tổng hoặc cửa hàng nguồn)">
+        <bpmn:flowNodeRef>E5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>G8</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>T7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>T8</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>G9</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>T9</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>E6</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="E5" name="Lệnh điều chuyển đã duyệt">
+      <bpmn:outgoing>F1</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:parallelGateway id="G8">
+      <bpmn:incoming>F1</bpmn:incoming>
+      <bpmn:outgoing>F2</bpmn:outgoing>
+      <bpmn:outgoing>F3</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:task id="T7" name="Soạn hàng và niêm phong">
+      <bpmn:incoming>F2</bpmn:incoming>
+      <bpmn:outgoing>F4</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="T8" name="Tạo phiếu và khóa IMEI">
+      <bpmn:incoming>F3</bpmn:incoming>
+      <bpmn:outgoing>F5</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:parallelGateway id="G9">
+      <bpmn:incoming>F4</bpmn:incoming>
+      <bpmn:incoming>F5</bpmn:incoming>
+      <bpmn:outgoing>F6</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:task id="T9" name="Vận chuyển kiện trong ngày">
+      <bpmn:incoming>F6</bpmn:incoming>
+      <bpmn:outgoing>F7</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="E6" name="Kiện hàng đã tới cửa hàng nhận">
+      <bpmn:incoming>F7</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="F1" sourceRef="E5" targetRef="G8" />
+    <bpmn:sequenceFlow id="F2" sourceRef="G8" targetRef="T7" />
+    <bpmn:sequenceFlow id="F3" sourceRef="G8" targetRef="T8" />
+    <bpmn:sequenceFlow id="F4" sourceRef="T7" targetRef="G9" />
+    <bpmn:sequenceFlow id="F5" sourceRef="T8" targetRef="G9" />
+    <bpmn:sequenceFlow id="F6" sourceRef="G9" targetRef="T9" />
+    <bpmn:sequenceFlow id="F7" sourceRef="T9" targetRef="E6" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_M3a">
+    <bpmndi:BPMNPlane id="Plane_M3a" bpmnElement="Collaboration_M3a">
+      <bpmndi:BPMNShape id="Participant_1_di" bpmnElement="Participant_1" isHorizontal="true">
+        <dc:Bounds x="160" y="60" width="910" height="688" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1_di" bpmnElement="Lane_1" isHorizontal="true">
+        <dc:Bounds x="190" y="60" width="880" height="688" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="E5_di" bpmnElement="E5">
+        <dc:Bounds x="322" y="156" width="36" height="36" />
+        <bpmndi:BPMNLabel><dc:Bounds x="275" y="198" width="130" height="45" /></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="G8_di" bpmnElement="G8">
+        <dc:Bounds x="495" y="149" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T7_di" bpmnElement="T7">
+        <dc:Bounds x="660" y="144" width="80" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T8_di" bpmnElement="T8">
+        <dc:Bounds x="660" y="304" width="80" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="G9_di" bpmnElement="G9">
+        <dc:Bounds x="855" y="149" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T9_di" bpmnElement="T9">
+        <dc:Bounds x="300" y="624" width="80" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="E6_di" bpmnElement="E6">
+        <dc:Bounds x="502" y="636" width="36" height="36" />
+        <bpmndi:BPMNLabel><dc:Bounds x="455" y="678" width="130" height="45" /></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="F1_di" bpmnElement="F1">
+        <di:waypoint x="358" y="174" />
+        <di:waypoint x="495" y="174" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F2_di" bpmnElement="F2">
+        <di:waypoint x="545" y="174" />
+        <di:waypoint x="660" y="174" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F3_di" bpmnElement="F3">
+        <di:waypoint x="520" y="199" />
+        <di:waypoint x="520" y="271" />
+        <di:waypoint x="700" y="271" />
+        <di:waypoint x="700" y="304" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F4_di" bpmnElement="F4">
+        <di:waypoint x="740" y="174" />
+        <di:waypoint x="855" y="174" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F5_di" bpmnElement="F5">
+        <di:waypoint x="700" y="364" />
+        <di:waypoint x="700" y="409" />
+        <di:waypoint x="880" y="409" />
+        <di:waypoint x="880" y="199" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F6_di" bpmnElement="F6">
+        <di:waypoint x="905" y="174" />
+        <di:waypoint x="995" y="174" />
+        <di:waypoint x="995" y="579" />
+        <di:waypoint x="340" y="579" />
+        <di:waypoint x="340" y="624" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F7_di" bpmnElement="F7">
+        <di:waypoint x="380" y="654" />
+        <di:waypoint x="502" y="654" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
